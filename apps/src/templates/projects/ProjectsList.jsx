@@ -1,3 +1,5 @@
+/* global window */
+
 import React from 'react';
 import {Table} from 'reactabular';
 import color from "../../util/color";
@@ -133,3 +135,6 @@ const ProjectsList = React.createClass({
   }
 });
 export default ProjectsList;
+
+window.dashboard = window.dashboard || {};
+window.dashboard.ProjectsList = ProjectsList;
